@@ -1,6 +1,96 @@
-body {
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
+/* Reset */
+* {
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Header */
+.header {
+    position: absolute;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.logo {
+    width: 150px;
+}
+
+.signin-btn {
+    background: #e50914;
+    padding: 7px 17px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Hero Background */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("background-image.jpg") no-repeat center center/cover;
+}
+
+/* Dark Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65);
+    z-index: 1;
+}
+
+/* Hero Content */
+.hero-content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    z-index: 2;
+    width: 80%;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.cta-btn {
+    margin-top: 25px;
+    background: #e50914;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    background: #f6121d;
 }
