@@ -1,11 +1,10 @@
-console.log("script loaded");
+console.log("MyFlix script loaded");
 
-// Simple click function
 document.addEventListener("DOMContentLoaded", () => {
-  const btn = document.getElementById("getStartedBtn");
-  if (btn) {
-    btn.addEventListener("click", () => {
-      alert("Signup flow would start here.");
-    });
-  }
+    const btn = document.getElementById("getStartedBtn");
+    if (btn) {
+        btn.addEventListener("click", () => {
+            alert("This is a demo! No real signup exists.");
+        });
+    }
 });
